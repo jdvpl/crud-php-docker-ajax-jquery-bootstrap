@@ -7,16 +7,17 @@ require_once 'conexion.php';
 $query = mysqli_query($conexion, "select * from empleado");
 
 
-echo '<table >
+echo '<table class="table table-hover">
   <thead>
     <tr>
-      <th >nombre </th>
-      <th >apellido</th>
-      <th >telefono</th>
-      <th >direccion</th>
-      <th >fecha_nacimiento</th>
-      <th >observacion</th>
-      <th >sueldo</th>
+      <th scope="col"># </th>
+      <th scope="col">Nombre </th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Fecha nacimiento</th>
+      <th scope="col">Observacion</th>
+      <th scope="col">Sueldo</th>
     </tr>
   </thead>
   <tbody>';
@@ -26,6 +27,7 @@ echo '<table >
 while($empleado= mysqli_fetch_assoc($query)){
     //var_dump($empleado);
     echo '<tr>';
+    echo '<td>'.$empleado['id_empleado'].'</td>';
     echo '<td>'.$empleado['nombre'].'</td>';
     echo '<td>'.$empleado['apellido'].'</td>';
     echo '<td>'.$empleado['telefono'].'</td>';
