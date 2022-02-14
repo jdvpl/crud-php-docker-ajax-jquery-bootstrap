@@ -19832,10 +19832,13 @@
     <script>
     $(document).ready(function() {
          var datatable = $('#example').DataTable({
-    dom: 'Bfrtip',
-    buttons: [
+    "dom": '<"top"<"left-col"B><"center-col"l><"right-col"f>>rtip',
+  
+    "buttons": [
       'copy', 'csv', 'excel', 'pdf', 'print'
-    ]
+    ],
+
+    "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "Todo"]]
     });
 
     });
