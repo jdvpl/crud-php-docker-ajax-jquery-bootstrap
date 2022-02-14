@@ -101,7 +101,7 @@ $(document).ready(function(){
              $.ajax({
                type: "POST",
                data: $("#form_actualizar").serialize(),
-               url: "../backend/update-user.php",
+               url: "../backend/update_user.php",
 
                success: function (data) {
                  alert(data);
@@ -123,7 +123,7 @@ $(document).ready(function(){
            $.ajax({
              type: "POST",
              data: "id_empleado=" + id_empleado,
-             url: "../backend/delete-user.php",
+             url: "../backend/delete_user.php",
 
              success: function (data) {
                alert(data);

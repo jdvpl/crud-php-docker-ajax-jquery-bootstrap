@@ -22,7 +22,98 @@
         </div>
         <div class="row">
           <div class="table-responsive mt-5" id="tabla">
+          </div>
+        </div>
+      </div>
 
+
+      <div class="modal" tabindex="-1" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Empleado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <div class="modal-body">
+              <form id="form_actualizar">
+                <div class="form-row">
+                  <div class="form-group col-md-12 d-none">
+                    <label for="nombre">ID Empleado</label>
+                    <input type="text" class="form-control" id="id_empleado" name="id_empleado" >
+                    
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="mb-3 col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                    <div id="nombre_invalido" class="invalid-feedback">
+                      Nombre invalido
+                    </div>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido">
+                    <div id="apellido_invalido" class="invalid-feedback">
+                      Apellido invalido
+                    </div>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="telefono" class="form-label">telefono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono">
+                    <div id="telefono_invalido" class="invalid-feedback">
+                      Telefono invalido
+                    </div>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="direccion" class="form-label">direccion</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion">
+                    <div id="direccion_invalido" class="invalid-feedback">
+                      direccion invalida
+                    </div>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="fecha_nacimiento" class="form-label">fecha_nacimiento</label>
+                    <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento">
+    
+                    <div id="fecha_nacimiento_invalido" class="invalid-feedback">
+                      Fecha de nacimiento invalida
+                    </div>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="sueldo" class="form-label">sueldo</label>
+                    <input type="number" class="form-control" id="sueldo" name="sueldo">
+                  </div>
+    
+                  <div id="sueldo_invalido" class="invalid-feedback">
+                    Sueldo invalido
+                  </div>
+    
+                  <div class="mb-3 col-md-12">
+    
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="observacion" id="observacion" name="observacion"></textarea>
+                      <label for="floatingTextarea">observacion</label>
+    
+                      <div id="observacion_invalido" class="invalid-feedback">
+                        observacion invalida
+                      </div>
+                    </div>
+                  </div>
+        
+    
+                </div>
+  
+        
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+              <button type="button" class="btn btn-primary" id="Actualizar">Actualizar</button>
+            </div>
           </div>
         </div>
       </div>
