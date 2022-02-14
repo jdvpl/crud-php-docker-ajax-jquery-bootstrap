@@ -11,29 +11,76 @@
 </head>
 <body>
     <div class="container mt-5">
-        <div class="row">
-          <div class="col-sm-12">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      <form id="form_agregar">
+              <div class="row">
+              <div class="mb-3 col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+                <div id="nombre_invalido" class="invalid-feedback">
+                  Nombre invalido
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+              <div class="mb-3 col-md-6">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido">
+                <div id="apellido_invalido" class="invalid-feedback">
+                  Apellido invalido
+                </div>
               </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              <div class="mb-3 col-md-6">
+                <label for="telefono" class="form-label">telefono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono">
+                <div id="telefono_invalido" class="invalid-feedback">
+                  Telefono invalido
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="mb-3 col-md-6">
+                <label for="direccion" class="form-label">direccion</label>
+                <input type="text" class="form-control" id="direccion" name="direccion">
+                <div id="direccion_invalido" class="invalid-feedback">
+                  direccion invalida
+                </div>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="fecha_nacimiento" class="form-label">fecha_nacimiento</label>
+                <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento">
+
+                <div id="fecha_nacimiento_invalido" class="invalid-feedback">
+                  Fecha de nacimiento invalida
+                </div>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="sueldo" class="form-label">sueldo</label>
+                <input type="number" class="form-control" id="sueldo" name="sueldo">
+              </div>
+
+              <div id="sueldo_invalido" class="invalid-feedback">
+                Sueldo invalido
+              </div>
+
+              <div class="mb-3 col-md-12">
+
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="observacion" id="observacion" name="observacion"></textarea>
+                  <label for="floatingTextarea">observacion</label>
+
+                  <div id="observacion_invalido" class="invalid-feedback">
+                    observacion invalida
+                  </div>
+                </div>
+              </div>
+    
+
+            </div>
+            <div class="d-grid">
+
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
             </form>
-          </div>
          
-        </div>
       </div>
 </body>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/data.js"></script>
 </html>
