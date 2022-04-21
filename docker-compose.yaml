@@ -11,7 +11,7 @@ services:
       MYSQL_PASSWORD: jdvpl
       MYSQL_ROOT_PASSWORD: jdvpl
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - ./mysqldata:/var/www/html  
     restart: always
